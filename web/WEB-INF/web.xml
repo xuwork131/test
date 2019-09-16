@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <!--指定服务启动后的默认首页-->
+    <welcome-file-list>
+        <welcome-file>/login.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!--指定servlet名称和该servlet的类路径，包含包名和类名-->
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>com.filterDemo.LoginServlet</servlet-class>
+    </servlet>
+    <!--指定servlet映射名和访问该servlet的路径-->
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>saveServlet</servlet-name>
+        <servlet-class>com.filterDemo.SaveServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>saveServlet</servlet-name>
+        <url-pattern>/saveServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!--指定过滤器名称和过滤器类名-->
+    <!--<filter>
+        <filter-name>filterDemo</filter-name>
+        <filter-class>com.filterDemo.FilterDemo</filter-class>
+    </filter>-->
+    <!--指定过滤器映射名和需要过滤的请求路径-->
+    <!--<filter-mapping>
+        <filter-name>filterDemo</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>-->
+</web-app>

@@ -10,7 +10,7 @@
     <script src="https://heerey525.github.io/layui-v2.4.3/layui-v2.4.5/layui.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/ChenZhaoYi.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js"></script>
+
 </head>
 <style>
     .tooltip {
@@ -743,6 +743,7 @@
 </div>
 <!---lcy--->
 <%--卢淦开始--%>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js"></script>
 <script>
 
     function aaa(){

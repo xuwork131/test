@@ -171,7 +171,7 @@
 <h4>胶囊式导航中的激活状态</h4>
 <ul class="nav nav-pills">
     <li class="active">
-        <a href="#">谁买
+        <a href="#">谁买s
             <span class="badge">小米w</span>
         </a>
 

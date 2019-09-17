@@ -16,7 +16,7 @@
     <form action="${pageContext.request.contextPath}/loginServlet" method="post">
         <table>
           <tr>
-            <td>用户名：<input type="text" name="username" value="wzd"/></td>
+            <td>用户名：<input type="text" name="username" value="窝窝头，一块钱四个"/></td>
             <td>项目报错:<input value="baocuo"/></td>
           </tr>
           <tr>
@@ -31,7 +31,7 @@
         </table>
         <button type="submit">登录</button>
       <a href="www.baidu.com">解云升</a>
-      <a href="www.google.com">chen</a>
+      <a href="www.google.com">chenZhaoYi</a>
       <button type="submit">GX123</button>
       <button type="submit">注册AZ</button>
         <button type="submit">lugan hehe56</button>

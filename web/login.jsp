@@ -9,6 +9,31 @@
     <link rel="stylesheet" href="https://heerey525.github.io/layui-v2.4.3/layui-v2.4.5/css/layui.css"  media="all">
     <script src="https://heerey525.github.io/layui-v2.4.3/layui-v2.4.5/layui.js" charset="utf-8"></script>
 </head>
+<style>
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+
+
+        position: absolute;
+        z-index: 1;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+</style>
 <body>
 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
     请点击
@@ -53,6 +78,11 @@
         <button class="layui-btn site-demo-active" data-type="loading">模拟loading</button>
     </div>
     <%--ren结束--%>
+<%--zhangfeng--%>
+<div class="tooltip">练习
+    <span class="tooltiptext">练习</span>
+</div>
+<%--zhangfeng--%>
 </body>
 <script>
 

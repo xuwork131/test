@@ -7,9 +7,9 @@
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript">
       jQuery(window).load(function(){
-          $("#status").delay(100).fadeOut('slow');
-          $("#placholder").delay(500).fadeOut('slow');
-          $("body").delay(500).css({"overflow":"visible"});
+          $("#status").delay(1000).fadeOut('slow');
+          $("#placholder").delay(1500).fadeOut('slow');
+          $("body").delay(1500).css({"overflow":"visible"});
       })
   </script>
   <body>

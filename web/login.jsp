@@ -7,7 +7,7 @@
     <form action="${pageContext.request.contextPath}/loginServlet" method="post">
         <table>
           <tr>
-            <td>用户名：<input type="text" name="username"/></td>
+            <td>用户名：<input type="text" name="username" value="wzd"/></td>
             <td>项目报错:<input value="baocuo"/></td>
           </tr>
           <tr>

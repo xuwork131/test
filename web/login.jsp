@@ -87,7 +87,7 @@
 <script>
     <%--jia--%>
       window.setInterval(colorFun,3000)
-      function colorFun() {
+      function colorFun()  {
           var color=Math.round( (Math.random()+1)*100000)
           $("body").css("background-color","#"+color)
       }

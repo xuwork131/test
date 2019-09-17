@@ -33,6 +33,7 @@
       <a href="www.baidu.com">解云升</a>
       <a href="www.google.com">chen</a>
       <button type="submit">GX123</button>
+      <button style="background-color: pink">GXGGXGX</button>
       <button type="submit">注册AZ</button>
         <button type="submit">lugan hehe56</button>
       <button type="submit">毕秀峰</button>

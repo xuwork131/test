@@ -11,6 +11,7 @@
     <script src="https://heerey525.github.io/layui-v2.4.3/layui-v2.4.5/layui.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/ChenZhaoYi.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js"></script>
 </head>
 <style>
     .tooltip {
@@ -36,8 +37,68 @@
     .tooltip:hover .tooltiptext {
         visibility: visible;
     }
+/*卢淦开始*/
+    html,#ss{
+        width: 100%;
+        height: 100%;
+    }
 
+    #ss{
+        margin: 0;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background-image: radial-gradient(red, black);
+    }
 
+    .heart{
+        width: 60px;
+        height: 60px;
+        background-color: tomato;
+        position: relative;
+        animation:beat .6s infinite ease-in;
+    }
+    .heart:before, .heart:after{
+        content:"";
+        position: absolute;
+        width: 60px; height: 60px;
+        background-color: tomato;
+        border-radius: 50%;
+    }
+    .heart:before{
+        left: 30px;
+    }
+
+    .heart:after{
+        top: -30px;
+    }
+
+    @keyframes beat{
+        0%{
+            transform:scale(1) rotate(-45deg);
+        }
+
+        40%{
+            transform:scale(1) rotate(-45deg);
+        }
+
+        55%{
+            transform:scale(1.3) rotate(-30deg);
+        }
+
+        70%{
+            transform:scale(1) rotate(-45deg);
+        }
+
+        85%{
+            transform:scale(1.3) rotate(-60deg);
+        }
+
+        100%{
+            transform:scale(1) rotate(-45deg);
+        }
+    }
+    /*卢淦结束*/
 </style>
 <%-------------------崔燃开始------------------%>
 <style type="text/css">
@@ -289,10 +350,12 @@
     <div class="site-demo-button" style="margin-top: 20px; margin-bottom: 0;">
         <button class="layui-btn site-demo-active" data-type="setPercent">设置50%</button>
         <button class="layui-btn site-demo-active" data-type="loading">模拟loading</button>
+        <button type="button" class="btn-default" onclick="aaa()">别点击不然是心形</button>
     </div>
 <%--xuyaning--%>
     <!-- 按钮触发模态框 -->
     <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">注册</button>
+
     <!-- 模态框（Modal） -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -320,7 +383,18 @@
     <span class="tooltiptext">练习</span>
 </div>
 <%--zhangfeng--%>
-
+<center>
+    <table>
+        <tr>
+            <td>👏1</td>
+            <td>🔥2</td>
+            <td>🚗3</td>
+            <td>✈️4</td>
+            <td>🍿️5</td>
+            <td>🍫6</td>
+        </tr>
+    </table>
+</center>
 
 
 <%--shenshutong--%>
@@ -403,6 +477,104 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- wsc开始 -->
 <!-- 按钮触发模态框 -->
 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalwsc">
@@ -451,6 +623,100 @@
     </div>
 </div>
 <!-- wsc结束 -->
+<%--卢淦开始--%>
+<div class="modal fade" id="aaa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="qqq">
+    <div class="modal-dialog">
+        <div class="modal-content" style="border-radius:50%;width: 500px;height: 500px">
+            <div class="modal-body" id="ss" style="border-radius:50px">
+                <div class="heart"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<%--卢淦结束--%>
+
+<%--郝家乐开始--%>
+<%--音乐循环播放--%>
+<video autoplay="autoplay" id = "video" hidden="true" playsinline webkit-playsinline>
+    <source type="video/mp4" src="${pageContext.request.contextPath}/js/1.mp3" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
+</video>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+                <button type="button" class="btn btn-primary">
+                    提交更改
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- wsc结束 -->
+<!--zzzzzzzzzzzzzzzzzzzz-->
+<button type="button" class="btn btn-primary" data-toggle="collapse"
+        data-target="#demo">
+       点击展示
+</button>
+
+<div id="demo" class="collapse in">
+    内容
+</div>
+<!--zzzzzzzzzzzzzzzzzzzzzzzzzz-->
+
+</body>
+
+<%--郝家乐开始--%>
+<%--音乐循环播放--%>
+<video autoplay="autoplay" id = "video" hidden="true" playsinline webkit-playsinline>
+    <source type="video/mp4" src="${pageContext.request.contextPath}/js/1.mp3" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
+</video>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+                <button type="button" class="btn btn-primary">
+                    提交更改
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- wsc结束 -->
+<!--zzzzzzzzzzzzzzzzzzzz-->
+<button type="button" class="btn btn-primary" data-toggle="collapse"
+        data-target="#demo">
+       点击展示
+</button>
+
+<div id="demo" class="collapse in">
+    内容
+</div>
+<!--zzzzzzzzzzzzzzzzzzzzzzzzzz-->
+
+<!---lcy--->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#liModal">点击2</button>
+<div class="modal fade" id="liModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                邮箱：<input type="text">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!---lcy--->
+
 <!--崔燃开始-->
 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#cuiran">崔燃专区</button>
 
@@ -566,6 +832,11 @@
 
 
 <script>
+    /*卢淦开始*/
+    function aaa(){
+        $("#aaa").modal('show');
+    }
+/*卢淦结束*/
     var video = document.getElementById("video");
     video.loop = false;
     video.addEventListener('ended', function() {
@@ -604,5 +875,6 @@ function timeHandler(t){
 console.log('当前播放的时间：'+t);
 }
 </script>
+
 
 </html>

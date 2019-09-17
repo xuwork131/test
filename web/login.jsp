@@ -42,7 +42,7 @@
       <button type="submit">注册'''</button>
         <button type="button">lugan</button>
       <button type="submit">CCCCCCPPPPPPPP</button>
-      <button type="submit">shenshutong</button>
+      <button type="submit">shenshutong1</button>
     </form>
     <p>jia</p>
   </body>

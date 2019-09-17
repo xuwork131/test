@@ -96,6 +96,24 @@
     </div><!-- /.modal -->
 </div>
 <!-- 模态框（Modal）毕秀峰 结束-->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#jiaotao">
+    请点击2
+</button>
+<!-- 模态框（Modal）焦焘 -->
+<div class="modal fade" id="jiaotao" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h1>焦焘</h1>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!-- 模态框（Modal）焦焘 结束-->
     <%--ren开始--%>
     <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
         <legend>动态改变进度</legend>

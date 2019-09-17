@@ -214,22 +214,22 @@
 <br/>
 <br/>
 <%--gggggggggggggggggggggggggggg--%>
-<img src="${pageContext.request.contextPath}/web/img/[HYGBN`C1POOL6KY81PJP8U.gif" style="width:65px;height: 55px ">
+<img src="${pageContext.request.contextPath}/img/[HYGBN`C1POOL6KY81PJP8U.gif" style="width:65px;height: 55px ">
 <h4>胶囊式导航中的激活状态</h4>
 <ul class="nav nav-pills">
     <li class="active">
-        <a href="#">谁买
+        <a href="#">谁买s
             <span class="badge">小米w</span>
         </a>
-        <>
+
     <li>
         <a href="#">窝窝头s</a>
-        <>
+
     <li>
         <a href="#">菠菜
             <span class="badge">贱卖s</span>
         </a>
-        <>
+
 </ul>
 
 <%--xxxxxxxxxxxxxxxxxxxxxxxxxxx--%>

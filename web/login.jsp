@@ -172,6 +172,27 @@
                 var DISABLED = 'layui-btn-disabled';
                 if(othis.hasClass(DISABLED)) return;
 
+                //模拟loading
+                var n = 0, timer = setInterval(function(){
+                    n = n + Math.random()*10|0;
+                    if(n>100){
+                        n = 100;
+                        clearInterval(timer);
+                        othis.removeClass(DISABLED);
+                    }
+                    element.progress('demo', n+'%');
+                }, 300+Math.random()*1000);
+
+                othis.addClass(DISABLED);
+            }
+        };
+
+        $('.site-demo-active').on('click', function(){
+            var othis = $(this), type = $(this).data('type');
+            active[type] ? active[type].call(this, othis) : '';
+        });
+    });
+    /*ren结束*/
 </script>
 
 </html>

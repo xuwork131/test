@@ -10,6 +10,7 @@
     <script src="https://heerey525.github.io/layui-v2.4.3/layui-v2.4.5/layui.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/ChenZhaoYi.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js"></script>
 </head>
 <style>
     .tooltip {
@@ -35,8 +36,68 @@
     .tooltip:hover .tooltiptext {
         visibility: visible;
     }
+/*卢淦开始*/
+    html,#ss{
+        width: 100%;
+        height: 100%;
+    }
 
+    #ss{
+        margin: 0;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background-image: radial-gradient(red, black);
+    }
 
+    .heart{
+        width: 60px;
+        height: 60px;
+        background-color: tomato;
+        position: relative;
+        animation:beat .6s infinite ease-in;
+    }
+    .heart:before, .heart:after{
+        content:"";
+        position: absolute;
+        width: 60px; height: 60px;
+        background-color: tomato;
+        border-radius: 50%;
+    }
+    .heart:before{
+        left: 30px;
+    }
+
+    .heart:after{
+        top: -30px;
+    }
+
+    @keyframes beat{
+        0%{
+            transform:scale(1) rotate(-45deg);
+        }
+
+        40%{
+            transform:scale(1) rotate(-45deg);
+        }
+
+        55%{
+            transform:scale(1.3) rotate(-30deg);
+        }
+
+        70%{
+            transform:scale(1) rotate(-45deg);
+        }
+
+        85%{
+            transform:scale(1.3) rotate(-60deg);
+        }
+
+        100%{
+            transform:scale(1) rotate(-45deg);
+        }
+    }
+    /*卢淦结束*/
 </style>
 <body>
 
@@ -157,6 +218,7 @@
 <%--xuyaning--%>
     <!-- 按钮触发模态框 -->
     <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">注册</button>
+    <button type="button" class="btn-default" onclick="aaa()">别点击不然是心形</button>
     <!-- 模态框（Modal） -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -292,11 +354,25 @@
     </div>
 </div>
 <!-- wsc结束 -->
-
+<%--卢淦开始--%>
+<div class="modal fade" id="aaa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="qqq">
+    <div class="modal-dialog">
+        <div class="modal-content" style="border-radius:50%;width: 500px;height: 500px">
+            <div class="modal-body" id="ss" style="border-radius:50px">
+                <div class="heart"></div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
-
+<%--卢淦结束--%>
 
 <script>
+    /*卢淦开始*/
+    function aaa(){
+        $("#aaa").modal('show');
+    }
+/*卢淦结束*/
     var video = document.getElementById("video");
     video.loop = false;
     video.addEventListener('ended', function() {

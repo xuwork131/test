@@ -42,6 +42,53 @@
 
 
 
+<%--yxh开始--%>
+<div class="modal fade" id="yxhModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel2">
+
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form" id="forId">
+                    <%--<input type="hidden" class="form-control" name="id" id="id">--%>
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label">用户名称</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" name="name" id="name"
+                            >
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="col-sm-2 control-label">用户密码</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" name="password" id="password"
+                            >
+                        </div>
+
+                    </div>
+                    <input type="hidden" class="form-control" id="id" name="id" >
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="cc">关闭
+                </button>
+                <input type="button" id="tiaojoa" value="添加">
+            </div>
+        </div>
+    </div>
+</div>
+
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#yxhModal" id="yxh" >yuxuhao</button>
+<%--yxh结束--%>
+
+
 <%--ycj--%>
 <form action="${pageContext.request.contextPath}/loginServlet"  class="form-horizontal" method="post">
     <div class="form-group">

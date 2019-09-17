@@ -233,6 +233,54 @@
 </ul>
 
 <%--xxxxxxxxxxxxxxxxxxxxxxxxxxx--%>
+<!-- wsc开始 -->
+<!-- 按钮触发模态框 -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalwsc">
+    ADD
+</button>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModalwsc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabelwsc">
+                    添加用户
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="name1" class="col-sm-2 control-label">姓名</label>
+                    <div class="col-sm-7">
+                        <input type="text" class="form-control" id="name1"
+                               name="name" placeholder="请输入名字">
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="help-block" id="msg"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="name1" class="col-sm-2 control-label">密码</label>
+                    <div class="col-sm-7">
+                        <input type="text" class="form-control" id="code"
+                               name="code" placeholder="请输入密码">
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+                <button type="button" class="btn btn-primary">
+                    提交更改
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- wsc结束 -->
 
 </body>
 
@@ -343,54 +391,7 @@
 <hr>
 <hr>
 <hr>
-<!-- wsc开始 -->
-<!-- 按钮触发模态框 -->
-<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalwsc">
-    ADD
-</button>
-<!-- 模态框（Modal） -->
-<div class="modal fade" id="myModalwsc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                    &times;
-                </button>
-                <h4 class="modal-title" id="myModalLabelwsc">
-                    添加用户
-                </h4>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <label for="name1" class="col-sm-2 control-label">姓名</label>
-                    <div class="col-sm-7">
-                        <input type="text" class="form-control" id="name1"
-                               name="name" placeholder="请输入名字">
-                    </div>
-                    <div class="col-sm-3">
-                        <span class="help-block" id="msg"></span>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="name1" class="col-sm-2 control-label">编码</label>
-                    <div class="col-sm-7">
-                        <input type="text" class="form-control" id="code"
-                               name="code" placeholder="请输入密码">
-                    </div>
 
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
-                </button>
-                <button type="button" class="btn btn-primary">
-                    提交更改
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- wsc结束 -->
 
 </body>
 

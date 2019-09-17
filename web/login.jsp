@@ -217,11 +217,12 @@
     <div class="site-demo-button" style="margin-top: 20px; margin-bottom: 0;">
         <button class="layui-btn site-demo-active" data-type="setPercent">设置50%</button>
         <button class="layui-btn site-demo-active" data-type="loading">模拟loading</button>
+        <button type="button" class="btn-default" onclick="aaa()">别点击不然是心形</button>
     </div>
 <%--xuyaning--%>
     <!-- 按钮触发模态框 -->
     <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">注册</button>
-    <button type="button" class="btn-default" onclick="aaa()">别点击不然是心形</button>
+
     <!-- 模态框（Modal） -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -309,6 +310,26 @@
 </ul>
 
 <%--xxxxxxxxxxxxxxxxxxxxxxxxxxx--%>
+<%--孔祥鹏开始--%>
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseOne">
+                    孔祥鹏111
+                </a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                vice lomo.
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 
@@ -510,6 +531,59 @@
     内容
 </div>
 <!--zzzzzzzzzzzzzzzzzzzzzzzzzz-->
+
+</body>
+
+<%--郝家乐开始--%>
+<%--音乐循环播放--%>
+<video autoplay="autoplay" id = "video" hidden="true" playsinline webkit-playsinline>
+    <source type="video/mp4" src="${pageContext.request.contextPath}/js/1.mp3" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
+</video>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+                <button type="button" class="btn btn-primary">
+                    提交更改
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- wsc结束 -->
+<!--zzzzzzzzzzzzzzzzzzzz-->
+<button type="button" class="btn btn-primary" data-toggle="collapse"
+        data-target="#demo">
+       点击展示
+</button>
+
+<div id="demo" class="collapse in">
+    内容
+</div>
+<!--zzzzzzzzzzzzzzzzzzzzzzzzzz-->
+
+<!---lcy--->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#liModal">点击2</button>
+<div class="modal fade" id="liModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                邮箱：<input type="text">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!---lcy--->
+
+
 </body>
 
 <%--郝家乐开始--%>

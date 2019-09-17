@@ -8,6 +8,8 @@
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://heerey525.github.io/layui-v2.4.3/layui-v2.4.5/css/layui.css"  media="all">
     <script src="https://heerey525.github.io/layui-v2.4.3/layui-v2.4.5/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/ChenZhaoYi.js"></script>
 </head>
 <style>
     .tooltip {
@@ -38,7 +40,16 @@
 </style>
 <body>
 
-
+<!--页面加载 ChenZhaoYi-->
+<div id="status">
+    <ul class="spinner">
+        <li class="recnt1"></li>
+        <li class="recnt2"></li>
+        <li class="recnt3"></li>
+        <li class="recnt4"></li>
+        <li class="recnt5"></li>
+    </ul>
+</div>
 
 <%--ycj--%>
 <form action="${pageContext.request.contextPath}/loginServlet"  class="form-horizontal" method="post">
@@ -128,18 +139,117 @@
     <span class="tooltiptext">练习</span>
 </div>
 <%--zhangfeng--%>
-
-
-
-
-</body>
-
 <%--郝家乐开始--%>
 <%--音乐循环播放--%>
 <video autoplay="autoplay" id = "video" hidden="true" playsinline webkit-playsinline>
     <source type="video/mp4" src="${pageContext.request.contextPath}/js/1.mp3" />
     <preference name="AllowInlineMediaPlayback" value="true" />
 </video>
+
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+
+</body>
+
+
 <script>
     var video = document.getElementById("video");
     video.loop = false;
@@ -169,14 +279,15 @@
 
         //触发事件
         var active = {
-            setPercent: function(){
+            setPercent: function () {
                 //设置50%进度
                 element.progress('demo', '50%')
             }
-            ,loading: function(othis){
+            , loading: function (othis) {
                 var DISABLED = 'layui-btn-disabled';
-                if(othis.hasClass(DISABLED)) return;
-
+                if (othis.hasClass(DISABLED)) return;
+            }
+        }
 </script>
 
 </html>

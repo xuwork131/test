@@ -78,34 +78,12 @@
         <button type="button">lugan</button>
       <button type="submit">CCCCCCPPPPPPPP</button>
       <button type="submit">shenshutong</button>
+  <button type="submit">LJW</button>
     </form>
     <p>jia</p>
   </body>
         </tr>
     </table>
-    <button type="submit">登录</button>
-    <button type="submit">登录q</button>
-    <a href="www.baidu.com">解云升</a>
-    <a href="www.google.com">chen</a>
-    <button type="submit">GX123</button>
-    <button type="submit">注册AZ</button>
-    <button type="submit">lugan hehe56</button>
-    <button type="submit">毕秀峰</button>
-    <button type="submit">注册</button>
-    <button type="submit">成功</button>
-    <button type="submit">注册</button>
-    <button type="submit">注册'''</button>
-    <button type="button">lugan</button>
-    <button type="submit">CCCCCCPPPPPPPP</button>
-    <button type="submit">shenshutong1</button>
-    <button type="button">贝贝</button>
-    <button type="submit">注册yf</button>
-    <button type="submit">成功</button>
-    <button type="submit">注册</button>
-    <button type="submit">注册'''</button>
-    <button type="button">lugan</button>
-    <button type="submit">CCCCCCPPPPPPPP</button>
-    <button type="submit">shenshutong</button>
 </form>
 </body>
 </html>

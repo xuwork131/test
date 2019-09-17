@@ -19,5 +19,6 @@
       <button type="submit">注册'''</button>
         <button type="button">lugan</button>
     </form>
+    <p>jia</p>
   </body>
 </html>

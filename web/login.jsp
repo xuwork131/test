@@ -128,8 +128,28 @@
     <span class="tooltiptext">练习</span>
 </div>
 <%--zhangfeng--%>
+<%--shenshutong--%>
+<button class="btn btn-default" data-toggle="modal" data-target="#shenModal">点击</button>
+<div class="modal fade" id="shenModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
 
-
+            </div>
+            <div class="modal-body">
+                电话：<input type="text">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<%--shenshutong--%>
 
 
 </body>

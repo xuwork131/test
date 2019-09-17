@@ -23,7 +23,11 @@
         <button type="submit">lugan hehe</button>
       <button type="submit">毕秀峰</button>
       <button type="submit">注册</button>
+      <button type="submit">注册</button>
+      <button type="submit">注册'''</button>
+        <button type="button">lugan</button>
       <button type="submit">CCCCCCPPPPPPPP</button>
+      <button type="submit">shenshutong</button>
     </form>
     <p>jia</p>
   </body>

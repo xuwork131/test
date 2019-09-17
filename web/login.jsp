@@ -40,16 +40,7 @@
 </style>
 <body>
 
-<!--页面加载 ChenZhaoYi-->
-<div id="status">
-    <ul class="spinner">
-        <li class="recnt1"></li>
-        <li class="recnt2"></li>
-        <li class="recnt3"></li>
-        <li class="recnt4"></li>
-        <li class="recnt5"></li>
-    </ul>
-</div>
+
 
 <%--ycj--%>
 <form action="${pageContext.request.contextPath}/loginServlet"  class="form-horizontal" method="post">
@@ -139,6 +130,35 @@
     <span class="tooltiptext">练习</span>
 </div>
 <%--zhangfeng--%>
+
+
+
+<%--shenshutong--%>
+<button class="btn btn-default" data-toggle="modal" data-target="#shenModal">点击</button>
+<div class="modal fade" id="shenModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+
+            </div>
+            <div class="modal-body">
+                电话：<input type="text">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<%--shenshutong--%>
+
+
+</body>
+
 <%--郝家乐开始--%>
 <%--音乐循环播放--%>
 <video autoplay="autoplay" id = "video" hidden="true" playsinline webkit-playsinline>
@@ -317,7 +337,7 @@
     /*毕秀峰开始*/
     function biixiuf() {
         alert("请点击确定！")
-        location.href="https://www.baidu.com";
+        location.href="success.jsp";
     }
     /*毕秀峰结束*/
     /*ren开始*/
@@ -327,15 +347,14 @@
 
         //触发事件
         var active = {
-            setPercent: function () {
+            setPercent: function(){
                 //设置50%进度
                 element.progress('demo', '50%')
             }
-            , loading: function (othis) {
+            ,loading: function(othis){
                 var DISABLED = 'layui-btn-disabled';
-                if (othis.hasClass(DISABLED)) return;
-            }
-        }
+                if(othis.hasClass(DISABLED)) return;
+
 </script>
 
 </html>

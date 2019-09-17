@@ -14,6 +14,7 @@
           </tr>
         </table>
         <button type="submit">登录</button>
+      <button type="submit">LG</button>
     </form>
   </body>
 </html>

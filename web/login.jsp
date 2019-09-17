@@ -38,6 +38,138 @@
 
 
 </style>
+<%-------------------崔燃开始------------------%>
+<style type="text/css">
+
+    #dongtai {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    #dongta {
+        width: 500px;
+        padding: 0;
+        height: 500px;
+        position: relative;
+        margin: 100px auto;
+        transform-style: preserve-3d;
+        animation: box 5s linear infinite;
+    }
+
+    @keyframes box {
+        0% {
+            transform: rotateY(0deg);
+        }
+        100% {
+            transform: rotateY(360deg);
+        }
+    }
+
+    li {
+        width: 500px;
+        padding: 0;
+        height: 500px;
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    .oli1 {
+        box-shadow: 0px 0px 100px red;
+        transform: rotateY(10deg);
+    }
+
+    .oli2 {
+        box-shadow: 0px 0px 100px coral;
+        transform: rotateY(20deg);
+    }
+
+    .oli3 {
+        box-shadow: 0px 0px 100px chartreuse;
+        transform: rotateY(30deg);
+    }
+
+    .oli4 {
+        box-shadow: 0px 0px 100px aqua;
+        transform: rotateY(40deg);
+    }
+
+    .oli5 {
+        box-shadow: 0px 0px 100px cyan;
+        transform: rotateY(50deg);
+    }
+
+    .oli6 {
+        box-shadow: 0px 0px 100px cornflowerblue;
+        transform: rotateY(60deg);
+    }
+
+    .oli7 {
+        box-shadow: 0px 0px 100px blue;
+        transform: rotateY(70deg);
+    }
+
+    .oli8 {
+        box-shadow: 0px 0px 100px magenta;
+        transform: rotateY(80deg);
+    }
+
+    .oli9 {
+        box-shadow: 0px 0px 100px yellow;
+        transform: rotateY(90deg);
+    }
+
+    .oli10 {
+        box-shadow: 0px 0px 100px lightblue;
+        transform: rotateY(100deg);
+    }
+
+    .oli11 {
+        box-shadow: 0px 0px 100px yellowgreen;
+        transform: rotateY(110deg);
+    }
+
+    .oli12 {
+        box-shadow: 0px 0px 100px aqua;
+        transform: rotateY(120deg);
+    }
+
+    .oli13 {
+        box-shadow: 0px 0px 100px lightcoral;
+        transform: rotateY(130deg);
+    }
+
+    .oli14 {
+        box-shadow: 0px 0px 100px firebrick;
+        transform: rotateY(140deg);
+    }
+
+    .oli15 {
+        box-shadow: 0px 0px 100px teal;
+        transform: rotateY(150deg);
+    }
+
+    .oli16 {
+        box-shadow: 0px 0px 100px thistle;
+        transform: rotateY(160deg);
+    }
+
+    .oli17 {
+        box-shadow: 0px 0px 100px coral;
+        transform: rotateY(170deg);
+    }
+
+    .oli18 {
+        box-shadow: 0px 0px 100px cadetblue;
+        transform: rotateY(180deg);
+    }
+
+    /*#dongtai {
+        background-color: #000;
+    }*/
+
+</style>
+<%------------崔燃结束------------------%>
 <body>
 
 
@@ -281,6 +413,52 @@
     </div>
 </div>
 <!-- wsc结束 -->
+<!--崔燃开始-->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#cuiran">崔燃专区</button>
+
+    <div class="modal fade" id="cuiran" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>崔燃专区</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <div id="dongtai" style="height: 400px;width: 400px">
+                            <ul id="dongta">
+                                <li class="oli1"></li>
+                                <li class="oli2"></li>
+                                <li class="oli3"></li>
+                                <li class="oli4"></li>
+                                <li class="oli5"></li>
+                                <li class="oli6"></li>
+                                <li class="oli7"></li>
+                                <li class="oli8"></li>
+                                <li class="oli9"></li>
+                                <li class="oli10"></li>
+                                <li class="oli11"></li>
+                                <li class="oli12"></li>
+                                <li class="oli13"></li>
+                                <li class="oli14"></li>
+                                <li class="oli15"></li>
+                                <li class="oli16"></li>
+                                <li class="oli17"></li>
+                                <li class="oli18"></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---崔燃结束-->
 
 </body>
 
@@ -412,8 +590,8 @@
           $("body").css("background-color","#"+color)
       }
     <%-- ---------------------------------------------------------------- --%>
-</script>
 
+</script>
 
 
 

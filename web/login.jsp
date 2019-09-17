@@ -33,8 +33,11 @@
     .tooltip:hover .tooltiptext {
         visibility: visible;
     }
+
+
 </style>
 <body>
+
 
 
 <%--ycj--%>
@@ -66,9 +69,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                     &times;
                 </button>
-                <h4 class="modal-title" id="myModalLabel">
-                    模态框（Modal）标题
-                </h4>
+
             </div>
             <div class="modal-body">
                 <h1>大家好 我是毕秀峰  来自1806A</h1>
@@ -97,14 +98,64 @@
         <button class="layui-btn site-demo-active" data-type="setPercent">设置50%</button>
         <button class="layui-btn site-demo-active" data-type="loading">模拟loading</button>
     </div>
+<%--xuyaning--%>
+    <!-- 按钮触发模态框 -->
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">注册</button>
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">注册</h4>
+          </div>
+          <div class="modal-body">
+            账号：<input type="text">
+
+
+            密码：<input type="text" >
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary">提交</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal -->
+    </div>
     <%--ren结束--%>
 <%--zhangfeng--%>
 <div class="tooltip">练习
     <span class="tooltiptext">练习</span>
 </div>
 <%--zhangfeng--%>
+
+
+
+
 </body>
+
+<%--郝家乐开始--%>
+<%--音乐循环播放--%>
+<video autoplay="autoplay" id = "video" hidden="true" playsinline webkit-playsinline>
+    <source type="video/mp4" src="${pageContext.request.contextPath}/js/1.mp3" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
+</video>
 <script>
+    var video = document.getElementById("video");
+    video.loop = false;
+    video.addEventListener('ended', function() {
+        video.currentTime=0.1; video.play(); }, false);
+    video.play();
+</script>
+<%--郝家乐结束--%>
+<script>
+    <%--jia--%>
+      window.setInterval(colorFun,3000)
+      function colorFun()  {
+          var color=Math.round( (Math.random()+1)*100000)
+          $("body").css("background-color","#"+color)
+      }
+    <%-- ---------------------------------------------------------------- --%>
     /*毕秀峰开始*/
     function biixiuf() {
         alert("请点击确定！")
@@ -126,26 +177,6 @@
                 var DISABLED = 'layui-btn-disabled';
                 if(othis.hasClass(DISABLED)) return;
 
-                //模拟loading
-                var n = 0, timer = setInterval(function(){
-                    n = n + Math.random()*10|0;
-                    if(n>100){
-                        n = 100;
-                        clearInterval(timer);
-                        othis.removeClass(DISABLED);
-                    }
-                    element.progress('demo', n+'%');
-                }, 300+Math.random()*1000);
-
-                othis.addClass(DISABLED);
-            }
-        };
-
-        $('.site-demo-active').on('click', function(){
-            var othis = $(this), type = $(this).data('type');
-            active[type] ? active[type].call(this, othis) : '';
-        });
-    });
-    /*ren结束*/
 </script>
+
 </html>

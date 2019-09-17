@@ -77,7 +77,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">关闭
                 </button>
-                <button type="button" class="btn btn-primary" >
+                <button type="button" class="btn btn-primary" onclick="bxf()" >
                     我是你的爸爸
                 </button>
             </div>
@@ -141,6 +141,13 @@
     <preference name="AllowInlineMediaPlayback" value="true" />
 </video>
 <script>
+    /*毕秀峰开始*/
+    function  bxf() {
+        alert("你好啊");
+    }
+    /*毕秀峰结束*/
+
+
     var video = document.getElementById("video");
     video.loop = false;
     video.addEventListener('ended', function() {

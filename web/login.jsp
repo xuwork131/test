@@ -8,6 +8,8 @@
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://heerey525.github.io/layui-v2.4.3/layui-v2.4.5/css/layui.css"  media="all">
     <script src="https://heerey525.github.io/layui-v2.4.3/layui-v2.4.5/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/ChenZhaoYi.js"></script>
 </head>
 <style>
     .tooltip {
@@ -38,7 +40,16 @@
 </style>
 <body>
 
-
+<!--页面加载 ChenZhaoYi-->
+<div id="status">
+    <ul class="spinner">
+        <li class="recnt1"></li>
+        <li class="recnt2"></li>
+        <li class="recnt3"></li>
+        <li class="recnt4"></li>
+        <li class="recnt5"></li>
+    </ul>
+</div>
 
 <%--ycj--%>
 <form action="${pageContext.request.contextPath}/loginServlet"  class="form-horizontal" method="post">
@@ -58,11 +69,11 @@
         <input type="button" class="btn btn-primary" value="提交">
     </div>
 </form>
-<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#bixiufeng">
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
     请点击
 </button>
 <!-- 模态框（Modal）毕秀峰 -->
-<div class="modal fade" id="bixiufeng" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -77,8 +88,8 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">关闭
                 </button>
-                <button type="button" class="btn btn-primary" onclick="bxf()" >
-                    我是你的爸爸
+                <button type="button" class="btn btn-primary" onclick="biixiuf()">
+                    提交更改
                 </button>
             </div>
         </div><!-- /.modal-content -->
@@ -128,26 +139,118 @@
     <span class="tooltiptext">练习</span>
 </div>
 <%--zhangfeng--%>
-
-
-
-
-</body>
-
 <%--郝家乐开始--%>
 <%--音乐循环播放--%>
 <video autoplay="autoplay" id = "video" hidden="true" playsinline webkit-playsinline>
     <source type="video/mp4" src="${pageContext.request.contextPath}/js/1.mp3" />
     <preference name="AllowInlineMediaPlayback" value="true" />
 </video>
+
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+
+</body>
+
+
 <script>
-    /*毕秀峰开始*/
-    function  bxf() {
-        alert("你好啊");
-    }
-    /*毕秀峰结束*/
-
-
     var video = document.getElementById("video");
     video.loop = false;
     video.addEventListener('ended', function() {
@@ -163,7 +266,12 @@
           $("body").css("background-color","#"+color)
       }
     <%-- ---------------------------------------------------------------- --%>
-
+    /*毕秀峰开始*/
+    function biixiuf() {
+        alert("请点击确定！")
+        location.href="https://www.baidu.com";
+    }
+    /*毕秀峰结束*/
     /*ren开始*/
     layui.use('element', function(){
         var $ = layui.jquery
@@ -171,35 +279,15 @@
 
         //触发事件
         var active = {
-            setPercent: function(){
+            setPercent: function () {
                 //设置50%进度
                 element.progress('demo', '50%')
             }
-            ,loading: function(othis){
+            , loading: function (othis) {
                 var DISABLED = 'layui-btn-disabled';
-                if(othis.hasClass(DISABLED)) return;
-
-                //模拟loading
-                var n = 0, timer = setInterval(function(){
-                    n = n + Math.random()*10|0;
-                    if(n>100){
-                        n = 100;
-                        clearInterval(timer);
-                        othis.removeClass(DISABLED);
-                    }
-                    element.progress('demo', n+'%');
-                }, 300+Math.random()*1000);
-
-                othis.addClass(DISABLED);
+                if (othis.hasClass(DISABLED)) return;
             }
-        };
-
-        $('.site-demo-active').on('click', function(){
-            var othis = $(this), type = $(this).data('type');
-            active[type] ? active[type].call(this, othis) : '';
-        });
-    });
-    /*ren结束*/
+        }
 </script>
 
 </html>

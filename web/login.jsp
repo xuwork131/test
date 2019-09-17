@@ -473,18 +473,7 @@
     <source type="video/mp4" src="${pageContext.request.contextPath}/js/1.mp3" />
     <preference name="AllowInlineMediaPlayback" value="true" />
 </video>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
-                </button>
-                <button type="button" class="btn btn-primary">
-                    提交更改
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
+
 <!-- wsc结束 -->
 <!--zzzzzzzzzzzzzzzzzzzz-->
 <button type="button" class="btn btn-primary" data-toggle="collapse"

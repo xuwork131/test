@@ -104,6 +104,7 @@
         <tr>
             <td>用户名：<input type="text" name="username" placeholder="请输入姓名"/></td>
             <td>项目报错:<input value="baocuo"/></td>
+            <td>电话:<input value="tel"/></td>
         </tr>
         <tr>
             <td style="float:right">密码：<input type="password" name="password" placeholder="请输入密码"/></td>

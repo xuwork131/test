@@ -12,6 +12,9 @@
           <tr>
             <td style="float:right">密码：<input type="password" name="password"/></td>
           </tr>
+          <tr>
+            <td>真实姓名：<input type="text" name="HJL"/></td>
+          </tr>
         </table>
         <button type="submit">登录</button>
       <button type="submit">毕秀峰</button>

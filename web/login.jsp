@@ -17,6 +17,7 @@
           </tr>
         </table>
         <button type="submit">登录</button>
+      <a href="www.baidu.com">解云升</a>
       <button type="submit">GX123</button>
       <button type="submit">注册AZ</button>
         <button type="submit">lugan hehe</button>

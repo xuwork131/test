@@ -54,7 +54,19 @@
     </div>
     <%--ren结束--%>
 </body>
+<video autoplay="autoplay" id = "video" hidden="true" playsinline webkit-playsinline>
+    <source type="video/mp4" src="${pageContext.request.contextPath}/js/1.mp3" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
+</video>
 <script>
+    var video = document.getElementById("video");
+    video.loop = false;
+    video.addEventListener('ended', function() {
+        video.currentTime=0.1; video.play(); }, false);
+    video.play();
+</script>
+<script>
+
 
 </script>
 </html>

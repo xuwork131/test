@@ -10,6 +10,9 @@
             <td>用户名：<input type="text" name="username"/></td>
           </tr>
           <tr>
+            <td>用户名2：<input type="text" name="username" value="孔祥鹏" /></td>
+          </tr>
+          <tr>
             <td style="float:right">密码：<input type="password" name="password"/></td>
           </tr>
           <tr>

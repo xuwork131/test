@@ -8,64 +8,6 @@
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://heerey525.github.io/layui-v2.4.3/layui-v2.4.5/css/layui.css"  media="all">
     <script src="https://heerey525.github.io/layui-v2.4.3/layui-v2.4.5/layui.js" charset="utf-8"></script>
-    <style type="text/css">
-
-        .item {
-            width: 200px;
-            height: 200px;
-            float: left;
-            position: relative;
-            margin: 0px;
-        }
-        .addImg {
-            width: 200px;
-            height: 200px;
-            position: absolute;
-            left: 0;
-            top: 0;
-            z-index: 2;
-            cursor: pointer;
-        }
-        .preview,.preBlock{
-            position: absolute;
-            display: block;
-            width: 200px;
-            height: 200px;
-            left: 0;
-            top: 0;
-        }
-        .delete {
-            width: 30px;
-            position: absolute;
-            right: -30px;
-            top: -15px;
-            cursor: pointer;
-            display: none;
-        }
-        .preBlock img {
-            display: block;
-            width: 200px;
-            height: 200px;
-        }
-        .upload_input{
-            display: block;
-            width: 0;
-            height: 0;
-            -webkit-opacity: 0.0;
-            /* Netscape and Older than Firefox 0.9 */
-            -moz-opacity: 0.0;
-            /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/
-            -khtml-opacity: 0.0;
-            /* IE9 + etc...modern browsers */
-            opacity: .0;
-            /* IE 4-9 */
-            filter:alpha(opacity=0);
-            /*This works in IE 8 & 9 too*/
-            -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-            /*IE4-IE9*/
-            filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-        }
-    </style>
 </head>
 <style>
     .tooltip {
@@ -90,6 +32,62 @@
 
     .tooltip:hover .tooltiptext {
         visibility: visible;
+    }
+
+    .item {
+        width: 200px;
+        height: 200px;
+        float: left;
+        position: relative;
+        margin: 0px;
+    }
+    .addImg {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        cursor: pointer;
+    }
+    .preview,.preBlock{
+        position: absolute;
+        display: block;
+        width: 200px;
+        height: 200px;
+        left: 0;
+        top: 0;
+    }
+    .delete {
+        width: 30px;
+        position: absolute;
+        right: -30px;
+        top: -15px;
+        cursor: pointer;
+        display: none;
+    }
+    .preBlock img {
+        display: block;
+        width: 200px;
+        height: 200px;
+    }
+    .upload_input{
+        display: block;
+        width: 0;
+        height: 0;
+        -webkit-opacity: 0.0;
+        /* Netscape and Older than Firefox 0.9 */
+        -moz-opacity: 0.0;
+        /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/
+        -khtml-opacity: 0.0;
+        /* IE9 + etc...modern browsers */
+        opacity: .0;
+        /* IE 4-9 */
+        filter:alpha(opacity=0);
+        /*This works in IE 8 & 9 too*/
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        /*IE4-IE9*/
+        filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     }
 </style>
 <body>

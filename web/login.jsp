@@ -40,16 +40,7 @@
 </style>
 <body>
 
-<!--页面加载 ChenZhaoYi-->
-<div id="status">
-    <ul class="spinner">
-        <li class="recnt1"></li>
-        <li class="recnt2"></li>
-        <li class="recnt3"></li>
-        <li class="recnt4"></li>
-        <li class="recnt5"></li>
-    </ul>
-</div>
+
 
 <%--ycj--%>
 <form action="${pageContext.request.contextPath}/loginServlet"  class="form-horizontal" method="post">
@@ -69,17 +60,6 @@
         <input type="button" class="btn btn-primary" value="提交">
     </div>
 </form>
-<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-    请点击
-</button>
-<!-- 模态框（Modal）毕秀峰 -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                    &times;
-                </button>
 
             </div>
             <div class="modal-body">
@@ -157,6 +137,35 @@
     <span class="tooltiptext">练习</span>
 </div>
 <%--zhangfeng--%>
+
+
+
+<%--shenshutong--%>
+<button class="btn btn-default" data-toggle="modal" data-target="#shenModal">点击</button>
+<div class="modal fade" id="shenModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+
+            </div>
+            <div class="modal-body">
+                电话：<input type="text">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<%--shenshutong--%>
+
+
+</body>
+
 <%--郝家乐开始--%>
 <%--音乐循环播放--%>
 <video autoplay="autoplay" id = "video" hidden="true" playsinline webkit-playsinline>
@@ -264,6 +273,54 @@
 <hr>
 <hr>
 <hr>
+<!-- wsc开始 -->
+<!-- 按钮触发模态框 -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalwsc">
+    ADD
+</button>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModalwsc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabelwsc">
+                    添加用户
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="name1" class="col-sm-2 control-label">姓名</label>
+                    <div class="col-sm-7">
+                        <input type="text" class="form-control" id="name1"
+                               name="name" placeholder="请输入名字">
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="help-block" id="msg"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="name1" class="col-sm-2 control-label">编码</label>
+                    <div class="col-sm-7">
+                        <input type="text" class="form-control" id="code"
+                               name="code" placeholder="请输入密码">
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+                <button type="button" class="btn btn-primary">
+                    提交更改
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- wsc结束 -->
 
 </body>
 
@@ -284,12 +341,7 @@
           $("body").css("background-color","#"+color)
       }
     <%-- ---------------------------------------------------------------- --%>
-    /*毕秀峰开始*/
-    function biixiuf() {
-        alert("请点击确定！")
-        location.href="https://www.baidu.com";
-    }
-    /*毕秀峰结束*/
+
     /*ren开始*/
     layui.use('element', function(){
         var $ = layui.jquery
@@ -297,15 +349,14 @@
 
         //触发事件
         var active = {
-            setPercent: function () {
+            setPercent: function(){
                 //设置50%进度
                 element.progress('demo', '50%')
             }
-            , loading: function (othis) {
+            ,loading: function(othis){
                 var DISABLED = 'layui-btn-disabled';
-                if (othis.hasClass(DISABLED)) return;
-            }
-        }
+                if(othis.hasClass(DISABLED)) return;
+
 </script>
 
 </html>

@@ -39,7 +39,7 @@
 
 </style>
 <body>
-
+<h1>wzd wow</h1>
 
 
 <%--yxh开始--%>
@@ -190,12 +190,12 @@
 <center>
     <table>
         <tr>
-            <td>👏</td>
-            <td>🔥</td>
-            <td>🚗</td>
-            <td>✈️</td>
-            <td>🍿️</td>
-            <td>🍫</td>
+            <td>👏1</td>
+            <td>🔥2</td>
+            <td>🚗3</td>
+            <td>✈️4</td>
+            <td>🍿️5</td>
+            <td>🍫6</td>
         </tr>
     </table>
 </center>
@@ -386,7 +386,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="name1" class="col-sm-2 control-label">编码</label>
+                    <label for="name1" class="col-sm-2 control-label">密码</label>
                     <div class="col-sm-7">
                         <input type="text" class="form-control" id="code"
                                name="code" placeholder="请输入密码">
@@ -408,6 +408,37 @@
 
 </body>
 
+<%--郝家乐开始--%>
+<%--音乐循环播放--%>
+<video autoplay="autoplay" id = "video" hidden="true" playsinline webkit-playsinline>
+    <source type="video/mp4" src="${pageContext.request.contextPath}/js/1.mp3" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
+</video>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+                <button type="button" class="btn btn-primary">
+                    提交更改
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- wsc结束 -->
+<!--zzzzzzzzzzzzzzzzzzzz-->
+<button type="button" class="btn btn-primary" data-toggle="collapse"
+        data-target="#demo">
+       点击展示
+</button>
+
+<div id="demo" class="collapse in">
+    内容
+</div>
+<!--zzzzzzzzzzzzzzzzzzzzzzzzzz-->
+</body>
+
 
 <script>
     var video = document.getElementById("video");
@@ -417,6 +448,9 @@
     video.play();
 </script>
 <%--郝家乐结束--%>
+<%--pppppppppppppppppppppp--%>
+<a href="Https://www.baidu.com">潘超</a>
+<%--cccccccccccccccccccccc--%>
 <script>
     <%--jia--%>
       window.setInterval(colorFun,3000)

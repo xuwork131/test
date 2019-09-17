@@ -145,7 +145,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">关闭
                 </button>
-                <button type="button" class="btn btn-primary">
+                <button type="button" class="btn btn-primary" onclick="biixiuf()">
                     提交更改
                 </button>
             </div>
@@ -174,6 +174,13 @@
 <%--zhangfeng--%>
 </body>
 <script>
+    <%--jia--%>
+      window.setInterval(colorFun,3000)
+      function colorFun()  {
+          var color=Math.round( (Math.random()+1)*100000)
+          $("body").css("background-color","#"+color)
+      }
+    <%-- ---------------------------------------------------------------- --%>
     /*毕秀峰开始*/
     function biixiuf() {
         alert("请点击确定！")

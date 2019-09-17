@@ -105,6 +105,12 @@
 <%--zhangfeng--%>
 </body>
 <script>
+    /*毕秀峰开始*/
+    function biixiuf() {
+        alert("请点击确定！")
+        location.href="success.jsp";
+    }
+    /*毕秀峰结束*/
     /*ren开始*/
     layui.use('element', function(){
         var $ = layui.jquery

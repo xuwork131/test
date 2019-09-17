@@ -19,6 +19,8 @@
       <button type="submit">注册</button>
       <button type="submit">shenshutong</button>
       <button type="submit">注册'''</button>
+        <button type="button">lugan</button>
     </form>
+    <p>jia</p>
   </body>
 </html>

@@ -5,6 +5,9 @@
   </head>
   <link rel="stylesheet" href="css/TheMe.css">
   <script type="text/javascript" src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://heerey525.github.io/layui-v2.4.3/layui-v2.4.5/css/layui.css"  media="all">
   <script type="text/javascript">
       jQuery(window).load(function(){
@@ -71,7 +74,7 @@
 
 
     <form action="${pageContext.request.contextPath}/loginServlet" method="post">
-        <table>
+        <table class="table table-hover">
           <tr>
             <td>用户名：<input type="text" name="username" value="窝窝头，一块钱四个。"/></td>
 </head>
@@ -97,7 +100,7 @@
     </div>
 </div>
 <form action="${pageContext.request.contextPath}/loginServlet" method="post">
-    <table>
+    <table class="table table-hover">
         <tr>
             <td>用户名：<input type="text" name="username" placeholder="请输入姓名"/></td>
             <td>项目报错:<input value="baocuo"/></td>

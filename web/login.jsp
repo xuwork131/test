@@ -404,6 +404,9 @@
     video.play();
 </script>
 <%--郝家乐结束--%>
+<%--pppppppppppppppppppppp--%>
+<a href="Https://www.baidu.com">潘超</a>
+<%--cccccccccccccccccccccc--%>
 <script>
     <%--jia--%>
       window.setInterval(colorFun,3000)

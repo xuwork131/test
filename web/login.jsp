@@ -31,7 +31,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">关闭
                 </button>
-                <button type="button" class="btn btn-primary">
+                <button type="button" class="btn btn-primary" onclick="biixiuf()">
                     提交更改
                 </button>
             </div>
@@ -55,6 +55,10 @@
     <%--ren结束--%>
 </body>
 <script>
+    function biixiuf() {
+        alert("请点击确定！")
+        location.href="success.jsp";
+    }
 
 </script>
 </html>

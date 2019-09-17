@@ -38,6 +38,13 @@
       <button type="submit">CCCCCCPPPPPPPP</button>
       <button type="submit">shenshutong1</button>
       <button type="button">贝贝</button>
+      <button type="submit">注册yf</button>
+      <button type="submit">成功</button>
+      <button type="submit">注册</button>
+      <button type="submit">注册'''</button>
+        <button type="button">lugan</button>
+      <button type="submit">CCCCCCPPPPPPPP</button>
+      <button type="submit">shenshutong</button>
     </form>
   </body>
 </html>

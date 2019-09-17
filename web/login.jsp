@@ -10,6 +10,7 @@
     <script src="https://heerey525.github.io/layui-v2.4.3/layui-v2.4.5/layui.js" charset="utf-8"></script>
 </head>
 <body>
+    <%--ren开始--%>
     <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
         <legend>动态改变进度</legend>
     </fieldset>
@@ -22,8 +23,10 @@
         <button class="layui-btn site-demo-active" data-type="setPercent">设置50%</button>
         <button class="layui-btn site-demo-active" data-type="loading">模拟loading</button>
     </div>
+    <%--ren结束--%>
 </body>
 <script>
+    /*ren开始*/
     layui.use('element',function(){
         var $ = layui.jquery;
         var element = layui.element;
@@ -58,5 +61,6 @@
             active[type] ? active[type].call(this, othis) : '';
         });
     })
+    /*ren结束*/
 </script>
 </html>

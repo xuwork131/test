@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>鸡你太美</title>
-  </head>
+
   <link rel="stylesheet" href="css/TheMe.css">
   <script type="text/javascript" src="js/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
@@ -15,7 +15,18 @@
           $("#placholder").delay(500).fadeOut('slow');
           $("body").delay(500).css({"overflow":"visible"});
       })
+
   </script>
+    <link rel="stylesheet" href="css/TheMe.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        jQuery(window).load(function () {
+            $("#status").delay(1000).fadeOut('slow');
+            $("#placholder").delay(1500).fadeOut('slow');
+            $("body").delay(1500).css({"overflow": "visible"});
+        })
+    </script>
+</head>
   <body>
   <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
       <legend>动态改变进度</legend>
@@ -66,40 +77,21 @@
           });
       });
   </script>
-
-
-
-
-
-
-
     <form action="${pageContext.request.contextPath}/loginServlet" method="post">
         <table class="table table-hover">
           <tr>
             <td>用户名：<input type="text" name="username" value="窝窝头，一块钱四个。"/></td>
-</head>
-<link rel="stylesheet" href="css/TheMe.css">
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript">
-    jQuery(window).load(function () {
-        $("#status").delay(1000).fadeOut('slow');
-        $("#placholder").delay(1500).fadeOut('slow');
-        $("body").delay(1500).css({"overflow": "visible"});
-    })
-</script>
-<body>
-<div id="placholder">
-    <div id="status">
-        <ul class="spinner">
-            <li class="recnt1"></li>
-            <li class="recnt2"></li>
-            <li class="recnt3"></li>
-            <li class="recnt4"></li>
-            <li class="recnt5"></li>
-        </ul>
-    </div>
-</div>
-<form action="${pageContext.request.contextPath}/loginServlet" method="post">
+            <div id="placholder">
+                <div id="status">
+                    <ul class="spinner">
+                        <li class="recnt1"></li>
+                        <li class="recnt2"></li>
+                        <li class="recnt3"></li>
+                        <li class="recnt4"></li>
+                        <li class="recnt5"></li>
+                    </ul>
+                </div>
+            </div>
     <table class="table table-hover">
         <tr>
             <td>用户名：<input type="text" name="username" placeholder="请输入姓名"/></td>

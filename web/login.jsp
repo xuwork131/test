@@ -5,11 +5,12 @@
     <link rel="stylesheet" href="css/TheMe.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.1/vue.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://heerey525.github.io/layui-v2.4.3/layui-v2.4.5/css/layui.css"  media="all">
     <script src="https://heerey525.github.io/layui-v2.4.3/layui-v2.4.5/layui.js" charset="utf-8"></script>
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+
     <script type="text/javascript" src="js/ChenZhaoYi.js"></script>
 
 </head>
@@ -651,12 +652,7 @@
 </div>
 </body>
 
-<script>
 
-    function aaa(){
-        $("#aaa").modal('show');
-    }
-</script>
 <style>
 
     html,#ss{
@@ -734,10 +730,15 @@
         </div>
     </div>
 </div>
-/*卢淦结束*/
+<%--/*卢淦结束*/--%>
 </body>
 
+<script>
 
+    function aaa(){
+        $("#aaa").modal('show');
+    }
+</script>
 
 <script>
 

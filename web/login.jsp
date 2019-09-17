@@ -21,7 +21,7 @@
             <td>项目报错:<input value="baocuo"/></td>
           </tr>
           <tr>
-            <td>用户名2：<input type="text" name="username" value="孔祥鹏" /></td>
+            <td>用户名2：<input type="text" name="username" value="孔祥鸟" /></td>
           </tr>
           <tr>
             <td style="float:right">密码：<input type="password" name="password"/></td>
@@ -31,6 +31,7 @@
           </tr>
         </table>
         <button type="submit">登录</button>
+      <button type="submit">登录q</button>
       <a href="www.baidu.com">解云升</a>
       <a href="www.google.com">chen</a>
       <button type="submit">GX123</button>

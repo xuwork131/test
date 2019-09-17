@@ -411,22 +411,6 @@
           $("body").css("background-color","#"+color)
       }
     <%-- ---------------------------------------------------------------- --%>
-
-    /*ren开始*/
-    layui.use('element', function(){
-        var $ = layui.jquery
-            ,element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
-
-        //触发事件
-        var active = {
-            setPercent: function(){
-                //设置50%进度
-                element.progress('demo', '50%')
-            }
-            ,loading: function(othis){
-                var DISABLED = 'layui-btn-disabled';
-                if(othis.hasClass(DISABLED)) return;
-
 </script>
 
 

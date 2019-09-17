@@ -58,11 +58,11 @@
         <input type="button" class="btn btn-primary" value="提交">
     </div>
 </form>
-<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#bixiufeng">
     请点击
 </button>
 <!-- 模态框（Modal）毕秀峰 -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="bixiufeng" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -77,8 +77,8 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">关闭
                 </button>
-                <button type="button" class="btn btn-primary" onclick="biixiuf()">
-                    提交更改
+                <button type="button" class="btn btn-primary" >
+                    我是你的爸爸
                 </button>
             </div>
         </div><!-- /.modal-content -->
@@ -156,12 +156,7 @@
           $("body").css("background-color","#"+color)
       }
     <%-- ---------------------------------------------------------------- --%>
-    /*毕秀峰开始*/
-    function biixiuf() {
-        alert("请点击确定！")
-        location.href="https://www.baidu.com";
-    }
-    /*毕秀峰结束*/
+
     /*ren开始*/
     layui.use('element', function(){
         var $ = layui.jquery

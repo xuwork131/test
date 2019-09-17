@@ -100,9 +100,8 @@
     }
     /*卢淦结束*/
 </style>
-<<<<<<< HEAD
 <body >
-=======
+
 <%-------------------崔燃开始------------------%>
 <style type="text/css">
 
@@ -236,7 +235,6 @@
 </style>
 <%------------崔燃结束------------------%>
 <body>
->>>>>>> origin/dev
 
 
 
@@ -309,21 +307,7 @@
     </div>
 </form>
 
-            </div>
-            <div class="modal-body">
-                <h1>大家好 我是毕秀峰  来自1806A</h1>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
-                </button>
-                <button type="button" class="btn btn-primary" onclick="biixiuf()">
-                    提交更改
-                </button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal -->
-</div>
-<!-- 模态框（Modal）毕秀峰 结束-->
+
 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#jiaotao">
     请点击2
 </button>

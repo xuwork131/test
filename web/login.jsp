@@ -15,6 +15,10 @@
         </table>
         <button type="submit">登录</button>
       <button type="submit">LG</button>
+      <button type="submit">注册AZ</button>
+        <button type="submit">lugan hehe56</button>
+      <button type="submit">毕秀峰</button>
+      <button type="submit">注册</button>
     </form>
   </body>
 </html>

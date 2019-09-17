@@ -216,6 +216,7 @@
 
 <br/>
 <br/>
+<img src="${pageContext.request.contextPath}/img/{0AE0209E-85CF-3378-DF21-ACF7FF9B5DFC}.gif" style="width:100px;height: 100px ">
 <%--gggggggggggggggggggggggggggg--%>
 <img src="${pageContext.request.contextPath}/img/[HYGBN`C1POOL6KY81PJP8U.gif" style="width:65px;height: 55px ">
 <h4>胶囊式导航中的激活状态</h4>

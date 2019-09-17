@@ -30,8 +30,9 @@
           </tr>
         </table>
         <button type="submit">登录</button>
-      <button type="submit">注册</button>
+      <button type="submit">注册AZ</button>
 
     </form>
+    <p>jia</p>
   </body>
 </html>

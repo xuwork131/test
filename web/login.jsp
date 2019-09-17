@@ -39,6 +39,20 @@
     </div><!-- /.modal -->
 </div>
 <!-- 模态框（Modal）毕秀峰 结束-->
+    <%--ren开始--%>
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+        <legend>动态改变进度</legend>
+    </fieldset>
+
+    <div class="layui-progress layui-progress-big" lay-showpercent="true" lay-filter="demo">
+        <div class="layui-progress-bar layui-bg-red" lay-percent="0%"></div>
+    </div>
+
+    <div class="site-demo-button" style="margin-top: 20px; margin-bottom: 0;">
+        <button class="layui-btn site-demo-active" data-type="setPercent">设置50%</button>
+        <button class="layui-btn site-demo-active" data-type="loading">模拟loading</button>
+    </div>
+    <%--ren结束--%>
 </body>
 <script>
 

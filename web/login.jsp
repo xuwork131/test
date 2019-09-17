@@ -18,7 +18,8 @@
         </table>
         <button type="submit">登录</button>
       <button type="submit">毕秀峰</button>
-      <button type="submit">注册'''</button>
+      <button type="submit">注册</button>
     </form>
+    <p>jia</p>
   </body>
 </html>

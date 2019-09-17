@@ -187,7 +187,18 @@
     <span class="tooltiptext">练习</span>
 </div>
 <%--zhangfeng--%>
-
+<center>
+    <table>
+        <tr>
+            <td>👏</td>
+            <td>🔥</td>
+            <td>🚗</td>
+            <td>✈️</td>
+            <td>🍿️</td>
+            <td>🍫</td>
+        </tr>
+    </table>
+</center>
 
 
 <%--shenshutong--%>

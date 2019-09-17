@@ -10,6 +10,25 @@
     <script src="https://heerey525.github.io/layui-v2.4.3/layui-v2.4.5/layui.js" charset="utf-8"></script>
 </head>
 <body>
+
+<%--ycj--%>
+<form action="${pageContext.request.contextPath}/loginServlet"  class="form-horizontal" method="post">
+    <div class="form-group">
+        <label class="col-sm-2 control-label">姓名</label>
+        <div class="col-sm-10">
+            <input type="text" name="name" placeholder="请输入姓名" class="form-control" style="width: 300px;"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">密码</label>
+        <div class="col-sm-10">
+            <input type="password" name="password" placeholder="请输入密码" class="form-control" style="width: 300px;"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="button" class="btn btn-primary" value="提交">
+    </div>
+</form>
 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
     请点击
 </button>

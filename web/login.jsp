@@ -43,6 +43,7 @@
         <button type="button">lugan</button>
       <button type="submit">CCCCCCPPPPPPPP</button>
       <button type="submit">shenshutong1</button>
+      <button type="button">贝贝</button>
     </form>
     <p>jia</p>
   </body>

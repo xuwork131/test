@@ -14,9 +14,11 @@
           </tr>
         </table>
         <button type="submit">登录</button>
+        <button type="submit">lugan hehe</button>
       <button type="submit">毕秀峰</button>
       <button type="submit">注册</button>
       <button type="submit">shenshutong</button>
+      <button type="submit">注册'''</button>
     </form>
   </body>
 </html>

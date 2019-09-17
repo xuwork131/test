@@ -3,6 +3,15 @@
   <head>
     <title>我是1806A</title>
   </head>
+  <link rel="stylesheet" href="css/TheMe.css">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript">
+      jQuery(window).load(function(){
+          $("#status").delay(100).fadeOut('slow');
+          $("#placholder").delay(500).fadeOut('slow');
+          $("body").delay(500).css({"overflow":"visible"});
+      })
+  </script>
   <body>
     <form action="${pageContext.request.contextPath}/loginServlet" method="post">
         <table>

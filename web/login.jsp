@@ -249,7 +249,18 @@
     <span class="tooltiptext">练习</span>
 </div>
 <%--zhangfeng--%>
-
+<center>
+    <table>
+        <tr>
+            <td>👏1</td>
+            <td>🔥2</td>
+            <td>🚗3</td>
+            <td>✈️4</td>
+            <td>🍿️5</td>
+            <td>🍫6</td>
+        </tr>
+    </table>
+</center>
 
 
 <%--shenshutong--%>
@@ -469,6 +480,37 @@
 </div>
 </body>
 <%--卢淦结束--%>
+
+<%--郝家乐开始--%>
+<%--音乐循环播放--%>
+<video autoplay="autoplay" id = "video" hidden="true" playsinline webkit-playsinline>
+    <source type="video/mp4" src="${pageContext.request.contextPath}/js/1.mp3" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
+</video>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+                <button type="button" class="btn btn-primary">
+                    提交更改
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- wsc结束 -->
+<!--zzzzzzzzzzzzzzzzzzzz-->
+<button type="button" class="btn btn-primary" data-toggle="collapse"
+        data-target="#demo">
+       点击展示
+</button>
+
+<div id="demo" class="collapse in">
+    内容
+</div>
+<!--zzzzzzzzzzzzzzzzzzzzzzzzzz-->
+</body>
 
 <%--郝家乐开始--%>
 <%--音乐循环播放--%>

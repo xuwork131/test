@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>我是1806A</title>
+    <title>登录页面</title>
   </head>
   <body>
     <form action="${pageContext.request.contextPath}/loginServlet" method="post">
@@ -14,6 +14,7 @@
           </tr>
         </table>
         <button type="submit">登录</button>
+        <button type="submit">lugan hehe</button>
       <button type="submit">毕秀峰</button>
       <button type="submit">注册</button>
     </form>

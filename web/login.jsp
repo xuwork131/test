@@ -139,7 +139,7 @@
 <ul class="nav nav-pills">
     <li class="active">
         <a href="#">谁买
-            <span class="badge">小米</span>
+            <span class="badge">小米w</span>
         </a>
         <>
     <li>

@@ -39,6 +39,9 @@
     }
 
 </style>
+<<<<<<< HEAD
+<body >
+=======
 <%-------------------崔燃开始------------------%>
 <style type="text/css">
 
@@ -172,6 +175,7 @@
 </style>
 <%------------崔燃结束------------------%>
 <body>
+>>>>>>> origin/dev
 
 
 
@@ -429,106 +433,6 @@
 </style>
 <div id="xieyun"></div>
 <%--解云升结束--%>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- wsc开始 -->
 <!-- 按钮触发模态框 -->
 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalwsc">
@@ -617,19 +521,7 @@
     <source type="video/mp4" src="${pageContext.request.contextPath}/js/1.mp3" />
     <preference name="AllowInlineMediaPlayback" value="true" />
 </video>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
-                </button>
-                <button type="button" class="btn btn-primary">
-                    提交更改
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- wsc结束 -->
+
 <!--zzzzzzzzzzzzzzzzzzzz-->
 <button type="button" class="btn btn-primary" data-toggle="collapse"
         data-target="#demo">
@@ -716,18 +608,7 @@
     <source type="video/mp4" src="${pageContext.request.contextPath}/js/1.mp3" />
     <preference name="AllowInlineMediaPlayback" value="true" />
 </video>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
-                </button>
-                <button type="button" class="btn btn-primary">
-                    提交更改
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
+
 <!-- wsc结束 -->
 <!--zzzzzzzzzzzzzzzzzzzz-->
 <button type="button" class="btn btn-primary" data-toggle="collapse"
@@ -768,14 +649,7 @@
         <source src="${pageContext.request.contextPath}/js/cxk.mp4" type="video/mp4">
     </video>
 </div>
-
-
-
-
-
-
 </body>
-
 
 <script>
 

@@ -20,7 +20,7 @@
             <td>项目报错:<input value="baocuo"/></td>
           </tr>
           <tr>
-            <td>用户名2：<input type="text" name="username" value="孔祥鹏" /></td>
+            <td>用户名2：<input type="text" name="username" value="孔祥鸟" /></td>
           </tr>
           <tr>
             <td style="float:right">密码：<input type="password" name="password"/></td>
@@ -30,11 +30,6 @@
           </tr>
         </table>
         <button type="submit">登录</button>
-      <a href="www.baidu.com">解云升</a>
-      <button type="submit">GX123</button>
-      <button type="submit">注册AZ</button>
-        <button type="submit">lugan hehe56</button>
-      <button type="submit">毕秀峰</button>
       <button type="submit">注册</button>
       <button type="submit">注册yf</button>
       <button type="submit">成功</button>
@@ -44,6 +39,5 @@
       <button type="submit">CCCCCCPPPPPPPP</button>
       <button type="submit">shenshutong</button>
     </form>
-    <p>jia</p>
   </body>
 </html>

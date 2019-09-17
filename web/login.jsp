@@ -19,6 +19,7 @@
         <button type="submit">lugan hehe56</button>
       <button type="submit">毕秀峰</button>
       <button type="submit">注册</button>
+      <button type="submit">注册yf</button>
     </form>
   </body>
 </html>

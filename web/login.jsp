@@ -8,6 +8,7 @@
         <table>
           <tr>
             <td>用户名：<input type="text" name="username"/></td>
+            <td>项目报错:<input value="baocuo"/></td>
           </tr>
           <tr>
             <td style="float:right">密码：<input type="password" name="password"/></td>

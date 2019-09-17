@@ -171,7 +171,7 @@
 </style>
 <%------------崔燃结束------------------%>
 <body>
-
+<h1>wzd wow</h1>
 
 
 <%--yxh开始--%>
@@ -220,6 +220,9 @@
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#yxhModal" id="yxh" >yuxuhao</button>
 <%--yxh结束--%>
 
+<%--许光佑开始--%>
+<div style="display: none"></div>
+<%--许光佑结束--%>
 
 <%--ycj--%>
 <form action="${pageContext.request.contextPath}/loginServlet"  class="form-horizontal" method="post">
@@ -345,6 +348,7 @@
 
 <br/>
 <br/>
+<img src="${pageContext.request.contextPath}/img/{0AE0209E-85CF-3378-DF21-ACF7FF9B5DFC}.gif" style="width:100px;height: 100px ">
 <%--gggggggggggggggggggggggggggg--%>
 <img src="${pageContext.request.contextPath}/img/[HYGBN`C1POOL6KY81PJP8U.gif" style="width:65px;height: 55px ">
 <h4>胶囊式导航中的激活状态</h4>
@@ -365,6 +369,39 @@
 </ul>
 
 <%--xxxxxxxxxxxxxxxxxxxxxxxxxxx--%>
+<%--孔祥鹏开始--%>
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseOne">
+                    孔祥鹏111
+                </a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                vice lomo.
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<%--郝家乐开始--%>
+<%--音乐循环播放--%>
+<video autoplay="autoplay" id = "video" hidden="true" playsinline webkit-playsinline>
+    <source type="video/mp4" src="${pageContext.request.contextPath}/js/1.mp3" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
+</video>
+
+
+
+
 <!-- wsc开始 -->
 <!-- 按钮触发模态框 -->
 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalwsc">
@@ -394,7 +431,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="name1" class="col-sm-2 control-label">密码</label>
+                    <label for="name1" class="col-sm-2 control-label">编码</label>
                     <div class="col-sm-7">
                         <input type="text" class="form-control" id="code"
                                name="code" placeholder="请输入密码">
@@ -468,107 +505,48 @@
     <source type="video/mp4" src="${pageContext.request.contextPath}/js/1.mp3" />
     <preference name="AllowInlineMediaPlayback" value="true" />
 </video>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+                <button type="button" class="btn btn-primary">
+                    提交更改
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- wsc结束 -->
+<!--zzzzzzzzzzzzzzzzzzzz-->
+<button type="button" class="btn btn-primary" data-toggle="collapse"
+        data-target="#demo">
+       点击展示
+</button>
 
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
+<div id="demo" class="collapse in">
+    内容
+</div>
+<!--zzzzzzzzzzzzzzzzzzzzzzzzzz-->
+
+<!---lcy--->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#liModal">点击2</button>
+<div class="modal fade" id="liModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                邮箱：<input type="text">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!---lcy--->
 
 
 </body>
@@ -582,6 +560,9 @@
     video.play();
 </script>
 <%--郝家乐结束--%>
+<%--pppppppppppppppppppppp--%>
+<a href="Https://www.baidu.com">潘超</a>
+<%--cccccccccccccccccccccc--%>
 <script>
     <%--jia--%>
       window.setInterval(colorFun,3000)

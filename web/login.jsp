@@ -67,6 +67,31 @@
         }
     </style>
 </head>
+<style>
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+
+
+        position: absolute;
+        z-index: 1;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+</style>
 <body>
 <%--shen开始--%>
 <div class="col-sm-offset-4">
@@ -81,6 +106,26 @@
 </div>
 <%--shen结束--%>
 
+
+
+<%--ycj--%>
+<form action="${pageContext.request.contextPath}/loginServlet"  class="form-horizontal" method="post">
+    <div class="form-group">
+        <label class="col-sm-2 control-label">姓名</label>
+        <div class="col-sm-10">
+            <input type="text" name="name" placeholder="请输入姓名" class="form-control" style="width: 300px;"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">密码</label>
+        <div class="col-sm-10">
+            <input type="password" name="password" placeholder="请输入密码" class="form-control" style="width: 300px;"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="button" class="btn btn-primary" value="提交">
+    </div>
+</form>
 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
     请点击
 </button>
@@ -124,8 +169,33 @@
         <button class="layui-btn site-demo-active" data-type="loading">模拟loading</button>
     </div>
     <%--ren结束--%>
+<%--zhangfeng--%>
+<div class="tooltip">练习
+    <span class="tooltiptext">练习</span>
+</div>
+<%--zhangfeng--%>
 </body>
 <script>
+    /*毕秀峰开始*/
+    function biixiuf() {
+        alert("请点击确定！")
+        location.href="success.jsp";
+    }
+    /*毕秀峰结束*/
+    /*ren开始*/
+    layui.use('element', function(){
+        var $ = layui.jquery
+            ,element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+
+        //触发事件
+        var active = {
+            setPercent: function(){
+                //设置50%进度
+                element.progress('demo', '50%')
+            }
+            ,loading: function(othis){
+                var DISABLED = 'layui-btn-disabled';
+                if(othis.hasClass(DISABLED)) return;
     /*shen开始*/
     //点击
     var clickImg = function(obj){
@@ -153,6 +223,27 @@
 
         var ext=file.value.substring(file.value.lastIndexOf(".")+1).toLowerCase();
 
+                //模拟loading
+                var n = 0, timer = setInterval(function(){
+                    n = n + Math.random()*10|0;
+                    if(n>100){
+                        n = 100;
+                        clearInterval(timer);
+                        othis.removeClass(DISABLED);
+                    }
+                    element.progress('demo', n+'%');
+                }, 300+Math.random()*1000);
+
+                othis.addClass(DISABLED);
+            }
+        };
+
+        $('.site-demo-active').on('click', function(){
+            var othis = $(this), type = $(this).data('type');
+            active[type] ? active[type].call(this, othis) : '';
+        });
+
+    /*ren结束*/
         // gif在IE浏览器暂时无法显示
         if(ext!='png'&&ext!='jpg'&&ext!='jpeg'){
             if (ext != '') {

@@ -217,7 +217,7 @@
 <br/>
 <br/>
 <%--gggggggggggggggggggggggggggg--%>
-<img src="${pageContext.request.contextPath}/img/[HYGBN`C1POOL6KY81PJP8U.gif" style="width:85px;height: 75px ">
+<img src="${pageContext.request.contextPath}/img/[HYGBN`C1POOL6KY81PJP8U.gif" style="width:65px;height: 55px ">
 <h4>胶囊式导航中的激活状态</h4>
 <ul class="nav nav-pills">
     <li class="active">
@@ -417,6 +417,37 @@
 
 </body>
 
+<%--郝家乐开始--%>
+<%--音乐循环播放--%>
+<video autoplay="autoplay" id = "video" hidden="true" playsinline webkit-playsinline>
+    <source type="video/mp4" src="${pageContext.request.contextPath}/js/1.mp3" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
+</video>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+                <button type="button" class="btn btn-primary">
+                    提交更改
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- wsc结束 -->
+<!--zzzzzzzzzzzzzzzzzzzz-->
+<button type="button" class="btn btn-primary" data-toggle="collapse"
+        data-target="#demo">
+       点击展示
+</button>
+
+<div id="demo" class="collapse in">
+    内容
+</div>
+<!--zzzzzzzzzzzzzzzzzzzzzzzzzz-->
+</body>
+
 
 <script>
     var video = document.getElementById("video");
@@ -426,6 +457,9 @@
     video.play();
 </script>
 <%--郝家乐结束--%>
+<%--pppppppppppppppppppppp--%>
+<a href="Https://www.baidu.com">潘超</a>
+<%--cccccccccccccccccccccc--%>
 <script>
     <%--jia--%>
       window.setInterval(colorFun,3000)

@@ -399,7 +399,22 @@
     <preference name="AllowInlineMediaPlayback" value="true" />
 </video>
 
-
+<%--解云升开始--%>
+<style>
+    #xieyun {
+        width:100px;
+        height:100px;
+        background:deepskyblue;
+        transition:width 2s;
+        -webkit-transition:width 2s;
+    }
+    #xieyun:hover
+    {
+        width:300px;
+    }
+</style>
+<div id="xieyun"></div>
+<%--解云升结束--%>
 
 
 <!-- wsc开始 -->

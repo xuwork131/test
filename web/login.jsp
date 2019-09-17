@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/TheMe.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.1/vue.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://heerey525.github.io/layui-v2.4.3/layui-v2.4.5/css/layui.css"  media="all">
     <script src="https://heerey525.github.io/layui-v2.4.3/layui-v2.4.5/layui.js" charset="utf-8"></script>
@@ -171,7 +172,7 @@
 </style>
 <%------------崔燃结束------------------%>
 <body>
-<h1>wzd wow</h1>
+
 
 
 <%--yxh开始--%>
@@ -412,7 +413,22 @@
     <preference name="AllowInlineMediaPlayback" value="true" />
 </video>
 
-
+<%--解云升开始--%>
+<style>
+    #xieyun {
+        width:100px;
+        height:100px;
+        background:deepskyblue;
+        transition:width 2s;
+        -webkit-transition:width 2s;
+    }
+    #xieyun:hover
+    {
+        width:300px;
+    }
+</style>
+<div id="xieyun"></div>
+<%--解云升结束--%>
 
 
 
@@ -744,6 +760,23 @@
 <!---lcy--->
 <%--卢淦开始--%>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js"></script>
+
+
+<%--刘欣洋--%>
+<div id="box">
+    <video id="video1" controls preload="auto" width="400px" height="300px">
+        <source src="${pageContext.request.contextPath}/js/cxk.mp4" type="video/mp4">
+    </video>
+</div>
+
+
+
+
+
+
+</body>
+
+
 <script>
 
     function aaa(){
@@ -855,9 +888,24 @@
     <%-- ---------------------------------------------------------------- --%>
 
 </script>
-
-
-
+<%-- 刘欣洋--%>
+<script>
+var videoObject = {
+container: '#video1',//“#”代表容器的ID，“.”或“”代表容器的class
+variable: 'player',//该属性必需设置，值等于下面的new chplayer()的对象
+loaded:'loadedHandler',//监听播放器加载成功
+autoplay:true,//自动播放
+//video:'http://118.180.24.208:8090//file-rest/uploads/001/003/2017-12-20/ff808081604959760160735aa78e0125.mp4'//视频地址
+video:'${pageContext.request.contextPath}/js/cxk.mp4'
+};
+var player=new ckplayer(videoObject);
+function loadedHandler(){//播放器加载后会调用该函数
+player.addListener('time', timeHandler); //监听播放时间,addListener是监听函数，需要传递二个参数，'time'是监听属性，这里是监听时间，timeHandler是监听接受的函数
+}
+function timeHandler(t){
+console.log('当前播放的时间：'+t);
+}
+</script>
 
 
 </html>
